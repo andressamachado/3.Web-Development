@@ -1,0 +1,183 @@
+*{
+  font-family: 'Times New Roman', serif;
+  font-size:20px;
+  background-color: #FFFFFF;
+  align-content: center;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  margin:0;
+  font-weight: lighter;
+  font-family: 'Oranienbaum', serif;
+}
+
+h1{
+  text-transform: uppercase;
+  font-size: 65px;
+  color:DarkRed;
+}
+
+h2{
+ font-size: 40px;
+ color: #404040;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+h4 {
+  font-size: 34px;
+}
+
+h5{
+  font-size: 30px;
+}
+
+p {
+  padding: 23px;
+  font-size: 23px;
+  text-align: justify;
+}
+
+#header {
+  padding: 20px 30px;
+  height: 20%;
+}
+
+#footer{
+ background-color : #EFEEEC;
+ float: left;
+ width: 100%;
+ padding: 100px;
+ text-align: center;
+ height: 20px;
+}
+
+#menu {
+  text-align:left;
+  padding: 30px;
+  float:left;
+  width: calc(20% - 60px);
+  height: calc(100vh - 70px);
+  font-family: 'Nixie One', serif;
+}
+
+.img-base{
+  width:80%;
+
+}
+
+#content{
+  padding: 20px;
+  width: calc(80% - 40px);
+  min-height: calc(100vh - 70px);
+  float: left;
+}
+
+a:link {
+  font-weight: bold;
+  color: #660000;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+a:visited {
+  font-weight: lighter;
+  color: #935A4C;
+  text-decoration: underline;
+  font-size: 10px;
+}
+
+a:hover {
+ text-decoration:none;
+ font-weight:bolder;
+ font-size: 20px;
+}
+
+a:active{
+  color: white;;
+
+}
+
+audio{
+  width: 65%;
+}
+
+figure{
+  margin:0;
+}
+
+video{
+  width: 100%;
+  margin-top: 40px;
+}
+
+table{
+  border-collapse:separate;
+}
+
+.indexfig, img{
+  border-radius: 15px;
+}
+
+.queen{
+  width: 30%;
+}
+
+.federal-wrapper{
+  display: flex;
+}
+.trudeau{
+  padding-right: 100px;
+}
+.image-wrapper{
+display: flex;
+}
+
+img .Jacques{
+  width: 40%;
+}
+
+table{
+  padding-top: 100px;
+}
+
+figcaption{
+  font-size: 15px;
+  text-align: left;
+}
+
+.indexfig{
+  opacity: 0.9;
+  filter: grayscale(90%);
+  border-radius: 15px;
+  width: 80%;
+}
+
+.anthem{
+  font-size: 26px;
+  font-style: italic;
+  border-left: 3px solid DarkRed;
+}
+
+
+cite{
+  align:left;
+  font-size: 40px;
+}
+
+li{
+  font-size: 20px;
+  color: #808080;
+}
+
+.References{
+  padding-bottom: 20px;
+}

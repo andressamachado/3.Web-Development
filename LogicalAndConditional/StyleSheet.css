@@ -1,0 +1,108 @@
+.header{
+  height: 150px;
+  background-image: url("faded-red-cement-wall_4460x4460.jpg");
+  background-size: auto 300%;
+
+
+}
+
+h1, h2 {
+  margin:0;
+  font-weight: lighter;
+  font-family: 'Oranienbaum', serif;
+}
+
+h1{
+  margin-top: 0;
+  font-size: 43px;
+  color: #25383C;
+}
+
+h2{
+  margin-bottom: 0;
+  font-size: 25px;
+  color: darkred;
+}
+
+.menu{
+  float: left;
+  width: 14%;
+  height: calc(100vh - 300px);
+  border-right: 1px solid lightblue;
+}
+
+a{
+  font-weight: bold;
+  color: #413839;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+a:link {
+  font-weight: bold;
+  color: #660000;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+a:visited {
+  font-weight: lighter;
+  color: #935A4C;
+  text-decoration: underline;
+  font-size: 10px;
+}
+
+a:hover {
+ text-decoration:none;
+ font-weight:bolder;
+ font-size: 20px;
+}
+
+a:active{
+  color: white;;
+
+}
+
+.content{
+  height: calc(100vh - 300px);;
+  width: 83%;
+  overflow-y:auto;
+  padding-left: 50px;
+}
+
+.footer{
+  background-color : #EFEEEC;
+  height: 150px;
+  text-align:center;
+}
+
+p{
+  padding: 23px;
+  color: #404040;
+}
+
+.footer p {
+  margin: 0;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+}
+
+.Form-wrapper{
+  border: 1px solid black;
+  width:fit-content;
+  padding: 15px;
+}
+
+.menu-spacing{
+  padding-left: 15px;
+}
+
+form{display: table;}
+form p {display: table-row;}
+form label{display: table-cell; padding: 5px}
+form input{display: table-cell;}
+form input[type="submit"]{display: table-cell;}
+form input[type="reset"]{display: table-cell;}

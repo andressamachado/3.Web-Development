@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<style>
+#panel, #flip {
+    padding: 5x;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+</style>
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Assignment3 - Task1</title>
+<meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+// Sub-task1:
+function convertLength(){
+  var controler = false;
+  var lengthValue = 0;
+  var choice = 0;
+
+  do{
+    choice = prompt("Please enter a length unit (1: to convert into inch, 2: to convert into centimeter)");
+
+    if (choice == 1 || choice == 2) {
+      controler = true;
+    }
+
+    if (controler == false) {
+      window.alert("You must enter a valid menu option.");
+    }
+
+  }while (controler == false);
+
+  var reset = false;
+  var valueConverted = 0;
+
+  do {
+    controler = true;
+    lengthValue = prompt("Please enter a lenght value to be converted to inch/centimeter");
+
+    if (isNaN(lengthValue) == true) {
+      window.alert("You must enter a number to be converted.");
+      controler = false;
+    } else {
+
+      //into inches
+      if (choice == 1) {
+        valueConverted = lengthValue/2.54;
+        window.alert("[ " + lengthValue + " cm ] = [ " + valueConverted.toFixed(2) + " inches ]");
+        reset = true;
+      }
+
+      if (choice == 2) {
+        valueConverted = lengthValue*2.54;
+        window.alert("[ " + lengthValue + " inches ] = [ " + valueConverted.toFixed(2) + " cm ]");
+        reset = true;
+      }
+    }
+
+  } while (controler == false);
+
+
+}
+
+// Sub-task2:
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideDown();
+  });
+  $("#flip").dblclick(function(){
+    $("#panel").slideUp();
+  });
+});
+
+</script>
+</head>
+
+
+<body>
+<h3>Assignment3-Part1 - Metric Conversion</h3>
+    <div id="flip">Metric Conversion</div>
+
+    <div id="panel">This program converts from inch to centimeter and vice versa</div>
+
+    <table>
+        	<tr>
+			    <td><input name="btnConvert" id="btnConvert" value="Convert!" type="button" onclick="convertLength()"/></td>
+		    </tr>
+   </table>
+
+
+</body>
+</html>
